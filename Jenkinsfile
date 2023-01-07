@@ -21,7 +21,7 @@ pipeline {
 
     stage('Docker image Build') {
       steps {
-        sh 'docker build -t Dockerfile'
+        sh 'docker build -t borovensky/cicd-pipeline'
       }
     }
 
