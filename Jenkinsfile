@@ -4,7 +4,7 @@ pipeline {
     stage('Git checkout') {
       steps {
         checkout scm
-        let customImage = docker.build("borovensky/cicd-pipeline:${env.BUILD_ID}")
+        def customImage = docker.build("borovensky/cicd-pipeline:${env.BUILD_ID}")
       }
     }
 
